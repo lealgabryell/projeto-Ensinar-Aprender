@@ -1,0 +1,127 @@
+@import url('./global.css');
+.navbar img{
+  width: 2rem;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navbar img {
+  width: 10rem;
+  transition: 0.3s ease;
+}
+.navbar img:hover {
+  transform: scale(1.1);
+}
+.navbar a{
+  color: #1C1678;
+  font-weight: 500;
+  margin: 0 1rem;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+.navbar a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  background-color: #1C1678;
+  height: 3px;
+  transition: 0.6s;
+}
+.navbar a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #1C1678;
+  height: 3px;
+}
+.navbar li{
+  display: flex;
+  align-items:center;
+}
+
+span{
+  color: #0CC0DF;
+}
+.sobre{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.6fr 0.5fr;
+  align-items: center;
+  background-color: #1C1678;
+  gap: 10rem;
+}
+.sobre-content{
+  margin-left: 2rem;
+}
+.sobre h1{
+  font-size: 5rem;
+  color: white;
+}
+.sobre h3{
+  font-size: 3rem;
+  color: white;
+}
+.sobre p{
+  font-size: 1.2rem;
+  text-align: justify;
+  color: white;
+}
+
+.sobre .img-container img{
+  width: 30rem;
+}
+@media(max-width: 1216px) {
+  .sobre h1{
+    font-size: 2.8rem;
+  }
+  .sobre h3{
+    font-size: 2.1rem;
+  }
+  .sobre .img-container img{
+    width: 22rem;
+  }
+}
+@media(max-width: 1110px){
+  .navbar a{
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .sobre{
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+   width: 100% ;
+   flex-direction: column;
+   gap: 3rem;
+  }
+  .sobre h1{
+    font-size: 2.8rem;
+  }
+  .sobre h3{
+    font-size: 2rem;
+  }
+  .sobre p{
+    font-size: 0.8rem;
+    padding-right: 5rem;
+  }
+  .sobre .img-container img{
+    width: 25rem;
+  }
+}
+@media(max-width: 896px){
+  .navbar a{
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  .sobre p{
+    padding-right: 1rem;
+  }
+}
