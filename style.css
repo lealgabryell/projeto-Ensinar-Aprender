@@ -12,6 +12,9 @@
   justify-content: center;
   gap: 2rem;
 }
+.navbar ul img {
+  width:3rem;
+}
 .navbar img {
   width: 8rem;
   transition: 0.3s ease;
