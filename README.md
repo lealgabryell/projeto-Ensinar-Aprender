@@ -1,2 +1,2 @@
 # projeto-Ensinar-Aprender
-Projeto em HTML e CSS para ajudar pessoas a aprender a programar
+Projeto em html e css feito por Gabryell leal, Ademario Neto e Talles Oliveira onde montamos um site para ensinar jovens e adultos entre 13-45 anos a programar e montar um site. Nesse mesmo servidor, deixaremos disponível para que os usuários possam comprar um curso indicado por nós onde poderão aprender mais sobre as maravilhas das programação WEB e outras linguagens de programação.

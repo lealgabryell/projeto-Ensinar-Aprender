@@ -5,15 +5,15 @@
 .navbar{
   display: flex;
   flex-direction: row;
-
 }
 .navbar ul{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 2rem;
 }
 .navbar img {
-  width: 10rem;
+  width: 8rem;
   transition: 0.3s ease;
 }
 .navbar img:hover {
@@ -26,7 +26,7 @@
   font-size: 2rem;
   transition: 0.3s ease;
 }
-.navbar a::after {
+.navbar a:after {
   content: "";
   display: block;
   width: 0%;
@@ -45,7 +45,78 @@
   display: flex;
   align-items:center;
 }
+.img-container img{
+  width: 30rem;
+}
+.home{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1r;
+  align-items: center;
+  justify-content: center;
+  background-color: #1C1678;
+  gap:0;
+}
+.home-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.home h1{
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.home p{
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+.inner-headings {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height:3.45rem;
+  line-height: 3.4rem;
+  font-size: 3rem;
+  font-family: "Hammersmith one", sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.inner-headings span {
+  position: relative;
+  color: lightskyblue;
+  animation: animation 12s ease infinite;
+}
 
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -50px;
+  }
+  45% {
+    top: -50px;
+  }
+  50% {
+    top: -100px;
+  }
+  70% {
+    top: -100px;
+  }
+  75% {
+    top: -150px;
+  }
+  95% {
+    top: -150px;
+  }
+}
 span{
   color: #0CC0DF;
 }
@@ -55,7 +126,7 @@ span{
   display: grid;
   grid-template-columns: 0.6fr 0.5fr;
   align-items: center;
-  background-color: #1C1678;
+  background-color: #393274;
   gap: 10rem;
 }
 .sobre-content{
@@ -66,6 +137,7 @@ span{
   color: white;
 }
 .sobre h3{
+  padding-top: 2rem;
   font-size: 3rem;
   color: white;
 }
@@ -75,10 +147,7 @@ span{
   color: white;
 }
 
-.sobre .img-container img{
-  width: 30rem;
-}
-@media(max-width: 1216px) {
+@media (max-width: 1216px){
   .sobre h1{
     font-size: 2.8rem;
   }
@@ -87,6 +156,29 @@ span{
   }
   .sobre .img-container img{
     width: 22rem;
+  }
+}
+@media (max-width: 1190px){
+  .navbarn ul{
+    gap: 2.8rem;
+  }
+  .navbar a{
+    font-size: 1.6rem;
+  }
+  .navbar img{
+    width: 5rem;
+  }
+  .img-container img{
+    width: 18rem;
+  }
+  .inner-headings{
+    font-size: 2rem;
+  }
+  .home p{
+font-size: 0.6rem ;
+  }
+  .home h1{
+    font-size: 2.5rem;
   }
 }
 @media(max-width: 1110px){
