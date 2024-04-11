@@ -149,6 +149,19 @@ span{
   text-align: justify;
   color: white;
 }
+.navfooter {
+  display: grid;
+  grid-template-columns: 1fr 0.05fr 0.1fr 0.2fr;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #57499e;
+
+}
+.navfooter a {
+  color:white;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
 
 @media (max-width: 1216px){
   .sobre h1{
