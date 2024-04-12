@@ -1,27 +1,40 @@
-@import url('./global.css');
+
 @import url('./style.css');
 
 
 
-.header-logica {
+
+
+.header-cursos {
     display: flex;
     justify-content: space-between;
+    background-color: #57499e;
 }
-
-.header-logica a img {
-    width: 2rem;
+.header-cursos a img {
+    width: 3rem;
 }
-.header-logica ul {
+.header-cursos ul {
     padding:  0 2rem;
-    text-transform: uppercase;
     font-size: 2rem;
+    
+   
 }
 .logica-playlist-aulas {
     display: flex;
     justify-content: center;
     padding: 1rem;
 }
+.logica-playlist-aulas ul {
+    display: flex;
+    gap: 15rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    justify-content: center;  
+}
+
+
 .imagem-centralizada {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
