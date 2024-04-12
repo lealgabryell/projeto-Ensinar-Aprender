@@ -1,10 +1,6 @@
 
 @import url('./style.css');
 
-
-
-
-
 .header-cursos {
     display: flex;
     justify-content: space-between;
@@ -23,9 +19,10 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
+    align-items: center;
 }
 .logica-playlist-aulas ul {
-    display: flex;
+  
     gap: 15rem;
     font-size: 2rem;
     text-transform: uppercase;
