@@ -11,27 +11,21 @@
 }
 .header-cursos ul {
     padding:  0 2rem;
-    font-size: 2rem;
-    
-   
+    font-size: 2rem;   
 }
 .logica-playlist-aulas {
     display: flex;
     justify-content: center;
+
     padding: 1rem;
-    align-items: center;
 }
 .logica-playlist-aulas ul {
-  
-    gap: 15rem;
     font-size: 2rem;
-    text-transform: uppercase;
-    justify-content: center;  
+    text-transform: uppercase;  
 }
 
-
-.imagem-centralizada {
+.hotmart-link-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 6rem;
 }

@@ -4,7 +4,7 @@
 }
 
 .header {
-  background-color: #57499ef3;
+  background-color: #57499ef1;
 }
 .navbar {
   display: flex;
@@ -30,7 +30,7 @@
   color: #ffffff;
   font-weight: 500;
   margin: 0 1rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   transition: 0.3s ease;
 }
 .navbar a:after {
@@ -69,6 +69,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding-top: 6rem;
 }
 .home h1 {
   text-align: center;
@@ -153,6 +154,23 @@ span {
   text-align: justify;
   color: white;
 }
+.sobre .text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.icon-container img {
+  width: 2rem;
+  transition: 0.3s ease;
+}
+.icon-container img:hover {
+  transform: scale(1.1);
+}
+
+.icon-container {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 .copyright {
   color: white;
   font-weight: 100;
@@ -164,7 +182,7 @@ span {
   justify-content: space-between;
   background-color: #57499e;
   background-color: lightskyblue;
-  padding: 1.2rem;
+  padding: 0.7rem;
 }
 
 .navfooter .lista-elementos-footer ul {
@@ -180,7 +198,7 @@ span {
 .navfooter a {
   font-weight: 100;
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding-left: 1rem;
 }
 .navfooter a:after {
@@ -253,9 +271,7 @@ span {
   cursor: pointer;
   transition: 0.3s ease;
 }
-.content-container .link-container a:hover {
-  transform: scale(1.1);
-}
+
 .contato {
   width: 100%;
   min-height: 100vh;
@@ -276,6 +292,62 @@ span {
 .contato-container .text-container {
   display: grid;
   grid-template-rows: 0.1fr 1fr;
+}
+
+.contact-form {
+  padding: 0.8rem 0;
+  min-height: 100vh;
+  background-color: #1c1678;
+}
+.contact-form h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 2rem;
+  color: aliceblue;
+}
+.contact-form form {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.contact-form form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea {
+  width: 90%;
+  padding: 1.5em;
+  font-size: 1.1rem;
+  color: black;
+  background-color: aliceblue;
+  margin: 1rem 0;
+  transition: all 0.5s;
+}
+.contact-form input:focus {
+  border-radius: 1.1rem;
+}
+.btn-1 {
+  padding: 1rem 1.7rem;
+  background-color: white;
+  color: black;
+  border: 0.1rem solid transparent;
+  border-color: black;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+.btn-1:hover {
+  background-color: #57499e;
+  color: white;
+  border: 0.1rem solid transparent;
+  transform: scale(1.1);
 }
 @media (max-width: 1216px) {
   .sobre h1 {
@@ -345,5 +417,86 @@ span {
   }
   .sobre p {
     padding-right: 1rem;
+  }
+}
+@media (max-width: 1104px) {
+  .sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .sobre .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .sobre .img-container img {
+    width: 16rem;
+  }
+}
+@media (max-width: 1417px) {
+  .contato-container .img-container img {
+    width: 16rem;
+  }
+  .icon-container {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 756px) {
+  .navbar a {
+    font-size: 1rem;
+  }
+  .img-container img {
+    width: 16rem;
+  }
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+  .home-content p {
+    font-size: 0.6rem;
+  }
+  .sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .sobre-content {
+    width: 35rem;
+  }
+  .sobre .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .sobre .img-container img {
+    width: 16rem;
+  }
+  .sobre h1 {
+    font-size: 2rem;
+  }
+
+  .sobre h3 {
+    font-size: 1.3rem;
+  }
+  .sobre p {
+    font-size: 0.65rem;
+  }
+  .text-container p {
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .contato-container .img-container img {
+    width: 10rem;
+  }
+  .icon-container {
+    padding: 1rem 0;
+  }
+  .icon-container img {
+    width: 1.3rem;
+  }
+  .contato-container {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
   }
 }
