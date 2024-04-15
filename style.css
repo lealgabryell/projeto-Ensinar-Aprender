@@ -349,6 +349,41 @@ span {
   border: 0.1rem solid transparent;
   transform: scale(1.1);
 }
+@media (max-width: 1000px){
+  .subsection{
+    gap:2rem;
+  }
+}
+@media (max-width: 900px){
+  .subsection {
+    display: grid;
+    grid-template-columns: none;
+    gap: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+.content-container{
+  width: 50rem;
+}
+.contato-container .img-container img{
+  width: 13rem;
+}
+.contato-container {
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+.information-container p{
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+.sobre-content{
+  width: 45rem;
+}
+.sobre-content p{
+  font-size: 1rem;
+}
+}
 @media (max-width: 1216px) {
   .sobre h1 {
     font-size: 2.8rem;
@@ -419,6 +454,31 @@ span {
     padding-right: 1rem;
   }
 }
+@media (max-width: 1271px){
+  .sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 2rem;
+  }
+  .sobre .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .sobre .img-container img {
+    width: 25rem;
+  }
+  .sobre-content{
+    width: 50rem;
+    padding-bottom: 6rem;
+  }
+  .sobre-content h1{
+    text-align: center;
+  }
+  .sobre-content p{
+    font-size: 1rem;
+  }
+}
 @media (max-width: 1104px) {
   .sobre {
     display: flex;
@@ -443,6 +503,13 @@ span {
   }
 }
 @media (max-width: 756px) {
+  .subsection {
+    display: grid;
+    grid-template-columns: none;
+    gap: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
   .navbar a {
     font-size: 1rem;
   }
