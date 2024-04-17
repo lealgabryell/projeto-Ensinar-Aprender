@@ -4,7 +4,7 @@
 }
 
 .header {
-  background-color: #57499ef1;
+  background-color: #57499e;
 }
 .navbar {
   display: flex;
@@ -62,7 +62,9 @@
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  background-color: #1c1678;
+  background-image: url('imagens/background-image.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
   gap: 0;
 }
 .home-content {
@@ -130,8 +132,7 @@ span {
 }
 .audio-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-left: 6rem;
 }
 .sobre {
   width: 100%;
@@ -139,7 +140,7 @@ span {
   display: grid;
   grid-template-columns: 0.6fr 0.5fr;
   align-items: center;
-  background-color: #393274;
+  background-color:  #393274;
   gap: 10rem;
 }
 .sobre-content {
@@ -172,7 +173,7 @@ span {
 }
 
 .icon-container {
-  padding-top: 6rem;
+  padding-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -223,18 +224,20 @@ span {
 .cursos {
   width: 100%;
   min-height: 100vh;
-  padding-top: 5rem;
+  padding-top: 4rem;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr;
   background-color: #1c1678;
 }
-
 .subsection {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8rem;
-  padding: 1.5rem;
+  padding: 5rem;
   text-align: center;
+}
+.subsection:not(:first-child){
+  padding-top: 0rem;
 }
 .img-container {
   width: 100%;
@@ -253,6 +256,9 @@ span {
   text-align: justify;
   padding-bottom: 0.6rem;
 }
+.contato-container .text-container p{
+  width: 65rem;
+}
 .text-container a {
   text-align: center;
   align-items: center;
@@ -263,12 +269,13 @@ span {
   grid-template-rows: 1fr 0fr 0.2fr;
   border: solid lightgray;
   border-radius: 2rem;
-  border-width: 5px;
-  background-color: white;
+  border-width: 1px;
+  background-color: aliceblue;
 }
 .content-container p {
   padding-right: 1rem;
   padding-left: 1rem;
+  color: black;
 }
 .content-container .link-containert a {
   text-transform: uppercase;
@@ -284,12 +291,12 @@ span {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .contato-container {
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   display: grid;
   grid-template-columns: 0.3fr 1fr;
 }
 .contato-container .img-container img {
-  width: 300px;
+  width: 250px;
   border-radius: 5rem 2rem;
   box-shadow: 0 0 1.5rem #57499e;
 }
