@@ -472,6 +472,9 @@ span {
   .sobre .img-container img {
     width: 25rem;
   }
+  .audio-container{
+    width: 15rem ;
+  }
   .sobre-content{
     width: 50rem;
     padding-bottom: 6rem;
