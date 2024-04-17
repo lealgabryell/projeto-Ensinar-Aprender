@@ -127,6 +127,11 @@
 span {
   color: #0cc0df;
 }
+.audio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .sobre {
   width: 100%;
   min-height: 100vh;
@@ -162,7 +167,6 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  background-color: #57499e;
   background-color: lightskyblue;
   padding: 1.2rem;
 }
